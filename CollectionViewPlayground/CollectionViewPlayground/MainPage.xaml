@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CollectionViewPlayground"
+             x:Class="CollectionViewPlayground.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <local:TwoColumnCollectionView x:Name="CollectionView"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        ItemSizingStrategy="MeasureAllItems">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid HeightRequest="{Binding Height}"
+                          HorizontalOptions="Start">
+                        <Frame HasShadow="False"
+                               Margin="15,5"
+                               BackgroundColor="{Binding BackgroundColor}"
+                               CornerRadius="5" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </local:TwoColumnCollectionView>
+    </StackLayout>
+
+</ContentPage>
