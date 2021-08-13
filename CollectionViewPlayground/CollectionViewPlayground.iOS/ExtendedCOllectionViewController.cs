@@ -45,7 +45,7 @@ namespace CollectionViewPlayground.iOS
             if (CollectionView.CollectionViewLayout == layout)
                 return;
             (layout as TwoColumnsCollectionViewLayout).Delegate = this;
-            var sections = CollectionView.NumberOfSections();
+        
             CollectionView.SetCollectionViewLayout(layout,false);
  
         }
