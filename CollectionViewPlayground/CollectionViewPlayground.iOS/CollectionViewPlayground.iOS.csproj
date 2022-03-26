@@ -10,6 +10,7 @@
         <OutputType>Exe</OutputType>
         <RootNamespace>CollectionViewPlayground.iOS</RootNamespace>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+        <LangVersion>9.0</LangVersion>
         <AssemblyName>CollectionViewPlayground.iOS</AssemblyName>
         <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     </PropertyGroup>
@@ -101,6 +102,7 @@
         <None Include="Entitlements.plist" />
         <None Include="Info.plist" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="EmptyLayout.cs" />
     </ItemGroup>
     <ItemGroup>
         <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -116,11 +118,17 @@
         <Reference Include="Xamarin.iOS" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+        <PackageReference Include="Xamarin.Essentials">
+          <Version>1.7.1</Version>
+        </PackageReference>
+        <PackageReference Include="Xamarin.CommunityToolkit">
+          <Version>2.0.1</Version>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\CollectionViewPlayground\CollectionViewPlayground.csproj">
-            <Project>{8A9C0283-5C56-4AAE-8220-79BBC2432E52}</Project>
+            <Project>{4E8F5128-D5DE-449E-AF57-BBA5B57D8DFC}</Project>
             <Name>CollectionViewPlayground</Name>
         </ProjectReference>
     </ItemGroup>

@@ -5,41 +5,66 @@ using System.Linq;
 using CoreGraphics;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace CollectionViewPlayground.iOS
 {
-	public partial class TwoColumnViewCollectionViewCell : UICollectionViewCell
-	{
-		public UIView ViewContainer => OutletViewContainer;
-		
-		// public TwoColumnViewCollectionViewCell(IntPtr handle) : base(handle)
-		// {
-		// 	InitXib();
-		// }
-		[Export("initWithFrame:")]
-		public TwoColumnViewCollectionViewCell(CGRect cgRect) : base(cgRect)
-		{
-			InitXib();
-		}
+    public partial class TwoColumnViewCollectionViewCell : UICollectionViewCell
+    {
+        public UIView ViewContainer => OutletViewContainer;
 
-		public TwoColumnViewCollectionViewCell(NSCoder coder) : base(coder)
-		{
-			InitXib();
-		}
-        
-		private void InitXib()
-		{
-			var view = LoadNib();
-			view.Frame = Bounds;
-			AddSubview(view);
-		}
+        // public TwoColumnViewCollectionViewCell(IntPtr handle) : base(handle)
+        // {
+        // 	InitXib();
+        // }
+        [Export("initWithFrame:")]
+        public TwoColumnViewCollectionViewCell(CGRect cgRect) : base(cgRect)
+        {
+            InitXib();
+        }
 
-		private UIView LoadNib()
-		{
-			var bundle = NSBundle.MainBundle;
-			var nib = UINib.FromName("TwoCollumnViewCollectionViewCell", bundle);
-			var view = nib.Instantiate(this, null).FirstOrDefault() as UIView;
-			return view;
-		}
-	}
+        public TwoColumnViewCollectionViewCell(NSCoder coder) : base(coder)
+        {
+            InitXib();
+        }
+
+        private void InitXib()
+        {
+            var view = LoadNib();
+            view.Frame = Bounds;
+            AddSubview(view);
+        }
+
+        private UIView LoadNib()
+        {
+            var bundle = NSBundle.MainBundle;
+            var nib = UINib.FromName("TwoCollumnViewCollectionViewCell", bundle);
+            var view = nib.Instantiate(this, null).FirstOrDefault() as UIView;
+            Random rnd = new Random();
+            Color color = Color.FromRgba(rnd.Next(255), rnd.Next(255), rnd.Next(255), 255);
+          //  view.BackgroundColor = color.ToUIColor();
+            return view;
+        }
+
+        private nfloat _offset = 0;
+
+        //public override UICollectionViewLayoutAttributes PreferredLayoutAttributesFittingAttributes(UICollectionViewLayoutAttributes layoutAttributes)
+        //{
+        //    var attrs = base.PreferredLayoutAttributesFittingAttributes(layoutAttributes);
+        //    SetNeedsLayout();
+        //    LayoutIfNeeded();
+        //    var sz = ContentView.SystemLayoutSizeFittingSize(layoutAttributes.Size);
+        //    var hhh = sz.Height;
+        //    var bounds = layoutAttributes.Bounds;
+        //    var ss = bounds.Size;
+        //    ss.Height = hhh;
+        //    bounds.Size = ss;
+        //    //bounds.Y = _offset;
+        //    //    bounds.Height = sz;
+        //    attrs.Bounds = bounds;
+        //    _offset += hhh;
+        //    return attrs;
+        //}
+    }
 }

@@ -14,10 +14,19 @@ namespace CollectionViewPlayground.iOS
         protected override ExtendedCOllectionViewController CreateController(GroupableItemsView itemsView,
             ItemsViewLayout layout) => new ExtendedCOllectionViewController(itemsView, layout);
 
-        protected new TwoColumnsCollectionViewLayout SelectLayout()
+        protected new TwoColumnsCollectionViewLayout SelectLayoutNew()
         {
             return new TwoColumnsCollectionViewLayout();
         }
+
+
+        //protected override ItemsViewLayout SelectLayout()
+        //{
+        //    var itemSizingStrategy = ItemsView.ItemSizingStrategy;
+        //    var itemsLayout = ItemsView.ItemsLayout;
+
+        //    return new EmptyLayout(new LinearItemsLayout(ItemsLayoutOrientation.Vertical), itemSizingStrategy);
+        //}
 
         protected override void OnElementChanged(ElementChangedEventArgs<GroupableItemsView> e)
         {
@@ -25,17 +34,22 @@ namespace CollectionViewPlayground.iOS
             base.OnElementChanged(e);
             
             UpdateLayout();
+            
             // SetUpNewElement(e.NewElement);
             // var ctrl = Controller;
             // var iii = 0;
         }
 
+        
+
         protected override void UpdateLayout()
         {
-           // base.UpdateLayout();
-           _layout = SelectLayout();
+          //  base.UpdateLayout();
+           // this.Layout
+         //  _layout = SelectLayoutNew();
+
            //
-            Controller?.UpdateLayoutEx(_layout);
+         //   Controller?.UpdateLayoutEx(_layout);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace CollectionViewPlayground
     {
         public double Height { get; set; }
         public Color BackgroundColor { get; set; }
+        public string Text { get; set; }
     }
     public partial class MainPage : ContentPage
     {
@@ -22,72 +23,86 @@ namespace CollectionViewPlayground
                 new Item()
                 {
                     Height = 120,
-                    BackgroundColor = Color.Aqua
+                    BackgroundColor = Color.Aqua,
+                    Text = "Lorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 80,
-                    BackgroundColor = Color.Bisque
+                    BackgroundColor = Color.Bisque,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 40,
-                    BackgroundColor = Color.Blue
+                    BackgroundColor = Color.Blue,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 150,
-                    BackgroundColor = Color.Chartreuse
+                    BackgroundColor = Color.Chartreuse,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 65,
-                    BackgroundColor = Color.Chocolate
+                    BackgroundColor = Color.Chocolate,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 200,
-                    BackgroundColor = Color.Fuchsia
+                    BackgroundColor = Color.Fuchsia,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 144,
-                    BackgroundColor = Color.Gold
+                    BackgroundColor = Color.Gold,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 80,
-                    BackgroundColor = Color.Gray
+                    BackgroundColor = Color.Gray,
+                    Text = "Lorem ipsum"
                 },
                 new Item()
                 {
                     Height = 25,
-                    BackgroundColor = Color.Green
+                    BackgroundColor = Color.Green,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 180,
-                    BackgroundColor = Color.Orange
+                    BackgroundColor = Color.Orange,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 212,
-                    BackgroundColor = Color.Olive
+                    BackgroundColor = Color.Olive,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 55,
-                    BackgroundColor = Color.DarkBlue
+                    BackgroundColor = Color.DarkBlue,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 350,
-                    BackgroundColor = Color.Yellow
+                    BackgroundColor = Color.Yellow,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
                 new Item()
                 {
                     Height = 168,
-                    BackgroundColor = Color.Maroon
+                    BackgroundColor = Color.Maroon,
+                    Text = "Lorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set ametLorem ipsum dolor set amet"
                 },
             };
         }

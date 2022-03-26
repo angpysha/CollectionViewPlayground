@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>9.0</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -10,6 +11,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Xamarin.Essentials" />
+      <None Remove="Xamarin.CommunityToolkit" />
     </ItemGroup>
 </Project>
